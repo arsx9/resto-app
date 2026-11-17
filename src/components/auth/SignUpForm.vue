@@ -1,7 +1,7 @@
 
 <script setup>
-import AuthCard from './AuthCard.vue'
-import BaseButton from '../common/BaseButton.vue'
+import AuthCard from '@/components/auth/AuthCard.vue'
+import BaseButton from '@/components/common/Buttons/BaseButton.vue'
 </script>
 
 <template>
@@ -53,7 +53,7 @@ import BaseButton from '../common/BaseButton.vue'
         />
       </div>
 
-      <BaseButton color="primary">
+      <BaseButton block>
         Create Account
       </BaseButton>
     </form>

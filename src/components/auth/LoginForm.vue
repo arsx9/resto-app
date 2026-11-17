@@ -1,7 +1,7 @@
 
 <script setup>
-import AuthCard from './AuthCard.vue'
-import BaseButton from '../common/BaseButton.vue'
+import AuthCard from '@/components/auth/AuthCard.vue'
+import BaseButton from '@/components/common/Buttons/BaseButton.vue'
 </script>
 
 <template>
@@ -47,7 +47,7 @@ import BaseButton from '../common/BaseButton.vue'
         </a>
       </div>
 
-      <BaseButton color="primary">
+      <BaseButton block>
         Sign In
       </BaseButton>
     </form>

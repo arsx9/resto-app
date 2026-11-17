@@ -16,7 +16,7 @@
 </template>
 
 <style scoped>
-@reference "../../assets/main.css";
+@reference "@/assets/main.css";
 
 .auth-card {
   @apply w-full max-w-md bg-surface rounded-2xl shadow-lg border border-border p-8;
