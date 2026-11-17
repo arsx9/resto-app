@@ -1,1 +1,72 @@
 @import "tailwindcss";
+
+/* ========================================
+   GLOBAL COLOR THEME - BROWN PALETTE
+======================================== */
+
+@theme {
+  /* Primary Colors */
+  --color-primary: #4A2C20;
+  --color-primary-hover: #362016;
+  --color-primary-light: #70452F;
+
+  /* Secondary Colors */
+  --color-secondary: #A66A45;
+  --color-secondary-hover: #8C5638;
+  --color-secondary-light: #C58B65;
+
+  /* Accent Colors */
+  --color-accent: #C58B65;
+  --color-accent-hover: #A66A45;
+
+  /* Background Colors */
+  --color-background: #F7F1E8;
+  --color-background-secondary: #EFE5D8;
+  --color-surface: #FFFFFF;
+  --color-surface-muted: #E8D8C5;
+
+  /* Text Colors */
+  --color-foreground: #30221B;
+  --color-text-primary: #4A2C20;
+  --color-text-secondary: #806B5D;
+  --color-text-muted: #A18D7D;
+
+  /* Border Colors */
+  --color-border: #E2D3C3;
+  --color-border-dark: #CBB7A3;
+
+  /* Status Colors */
+  --color-success: #477A50;
+  --color-success-light: #E4F0E5;
+
+  --color-danger: #B7473E;
+  --color-danger-light: #FBE9E7;
+
+  --color-warning: #B98232;
+  --color-warning-light: #FAF0D9;
+}
+
+/* ========================================
+   GLOBAL STYLES
+======================================== */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F7F1E8;
+  color: #30221B;
+}
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+}
