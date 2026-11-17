@@ -1,7 +1,8 @@
 
 <script setup>
 import AuthCard from '@/components/auth/AuthCard.vue'
-import BaseButton from '@/components/common/Buttons/BaseButton.vue'
+import BaseInput from '@/components/ui/inputs/Input.vue'
+import BaseButton from '@/components/ui/buttons/BaseButton.vue'
 </script>
 
 <template>
@@ -17,36 +18,23 @@ import BaseButton from '@/components/common/Buttons/BaseButton.vue'
     </template>
 
     <form class="space-y-5" @submit.prevent>
-      <div>
-        <label class="block text-sm font-medium text-foreground mb-2">
-          Email Address
-        </label>
+      <BaseInput
+        label="Email Address"
+        type="email"
+        placeholder="Enter your email"
+      />
 
-        <input
-          type="email"
-          placeholder="Enter your email"
-          class="w-full px-4 py-3 border border-border rounded-lg outline-none focus:border-primary"
-        />
-      </div>
-
-      <div>
-        <label class="block text-sm font-medium text-foreground mb-2">
-          Password
-        </label>
-
-        <input
-          type="password"
-          placeholder="Enter your password"
-          class="w-full px-4 py-3 border border-border rounded-lg outline-none focus:border-primary"
-        />
-      </div>
+      <BaseInput
+        label="Password"
+        type="password"
+        placeholder="Enter your password"
+      />
 
       <div class="flex justify-end">
         <a href="#" class="text-sm text-primary hover:underline">
           Forgot password?
         </a>
       </div>
-
       <BaseButton block>
         Sign In
       </BaseButton>

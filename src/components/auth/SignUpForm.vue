@@ -1,7 +1,8 @@
 
 <script setup>
 import AuthCard from '@/components/auth/AuthCard.vue'
-import BaseButton from '@/components/common/Buttons/BaseButton.vue'
+import BaseInput from '@/components/ui/inputs/Input.vue'
+import BaseButton from '@/components/ui/buttons/BaseButton.vue'
 </script>
 
 <template>
@@ -17,42 +18,22 @@ import BaseButton from '@/components/common/Buttons/BaseButton.vue'
     </template>
 
     <form class="space-y-4" @submit.prevent>
-      <div>
-        <label class="block text-sm font-medium text-foreground mb-2">
-          Full Name
-        </label>
+      <BaseInput
+        label="Full Name"
+        placeholder="Enter your full name"
+      />
 
-        <input
-          type="text"
-          placeholder="Enter your full name"
-          class="w-full px-4 py-3 border border-border rounded-lg outline-none focus:border-primary"
-        />
-      </div>
+      <BaseInput
+        label="Email Address"
+        type="email"
+        placeholder="Enter your email"
+      />
 
-      <div>
-        <label class="block text-sm font-medium text-foreground mb-2">
-          Email Address
-        </label>
-
-        <input
-          type="email"
-          placeholder="Enter your email"
-          class="w-full px-4 py-3 border border-border rounded-lg outline-none focus:border-primary"
-        />
-      </div>
-
-      <div>
-        <label class="block text-sm font-medium text-foreground mb-2">
-          Password
-        </label>
-
-        <input
-          type="password"
-          placeholder="Create a password"
-          class="w-full px-4 py-3 border border-border rounded-lg outline-none focus:border-primary"
-        />
-      </div>
-
+      <BaseInput
+        label="Password"
+        type="password"
+        placeholder="Create a password"
+      />
       <BaseButton block>
         Create Account
       </BaseButton>
